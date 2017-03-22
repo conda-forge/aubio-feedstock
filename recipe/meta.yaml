@@ -22,11 +22,11 @@ requirements:
     - toolchain
     - numpy x.x
     - pkg-config  # [not win]
-    - ffmpeg  # [not win]
+    - ffmpeg      # [not win]
   run:
     - python
     - numpy x.x
-    - ffmpeg  # [not win]
+    - ffmpeg      # [not win]
 
 test:
   imports:
