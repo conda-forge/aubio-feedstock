@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 6
+  number: 7
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -21,12 +21,12 @@ requirements:
     - setuptools
     - toolchain
     - numpy x.x
-    - pkg-config  # [not win]
-    - ffmpeg      # [not win]
+    - pkg-config      # [not win]
+    - ffmpeg 2.8.*    # [not win]
   run:
     - python
     - numpy x.x
-    - ffmpeg      # [not win]
+    - ffmpeg 2.8.*    # [not win]
 
 test:
   imports:
