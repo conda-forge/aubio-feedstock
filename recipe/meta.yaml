@@ -1,6 +1,6 @@
 {% set name = "aubio" %}
-{% set version = "0.4.4" %}
-{% set sha256 = "2acdb92623b9d4ba641c387760ffe3ec1e4c6ab498e64e5e2286c99e36ffbff8" %}
+{% set version = "0.4.5~git+67a3053" %}
+{% set sha256 = "b1edcbb6f2243acba4566832285f787afce9b2fc39f1f4d50017d795ee49164a" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.bz2
-  url: https://aubio.org/pub/{{ name }}-{{ version }}.tar.bz2
+  url: https://aubio.org/beta/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
 
 build:
-  number: 7
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -22,11 +22,11 @@ requirements:
     - toolchain
     - numpy x.x
     - pkg-config      # [not win]
-    - ffmpeg 2.8.*    # [not win]
+    - ffmpeg 2.8.*
   run:
     - python
     - numpy x.x
-    - ffmpeg 2.8.*    # [not win]
+    - ffmpeg 2.8.*
 
 test:
   imports:
