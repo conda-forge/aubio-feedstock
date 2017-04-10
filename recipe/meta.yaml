@@ -1,6 +1,6 @@
 {% set name = "aubio" %}
-{% set version = "0.4.5~git+67a3053" %}
-{% set sha256 = "b1edcbb6f2243acba4566832285f787afce9b2fc39f1f4d50017d795ee49164a" %}
+{% set version = "0.4.5" %}
+{% set sha256 = "70c2804e6f4fbf0ebc0fb9ac8cc9d465ef4a4d438311c074c9a7364e98827af6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.bz2
-  url: https://aubio.org/beta/{{ name }}-{{ version }}.tar.bz2
+  url: https://aubio.org/pub/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
 
 build:
