@@ -1,0 +1,13 @@
+diff --git a/python/lib/moresetuptools.py b/python/lib/moresetuptools.py
+index 2f621a7c..30bf9be5 100644
+--- a/python/lib/moresetuptools.py
++++ b/python/lib/moresetuptools.py
+@@ -182,7 +182,7 @@ class build_ext(_build_ext):
+                 add_external_deps(extension, usedouble=enable_double)
+                 # force adding libav on windows
+                 if os.name == 'nt' and ('WITH_LIBAV' in os.environ \
+-                        or 'CONDA_PREFIX' in os.environ):
++                        or ('CONDA_PREFIX' in os.environ and os.environ['CONDA_PY'] != '27')):
+                     add_libav_on_win(extension)
+                 # add libaubio sources and look for optional deps with pkg-config
+                 add_local_aubio_sources(extension)
