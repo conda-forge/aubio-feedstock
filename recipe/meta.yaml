@@ -23,8 +23,8 @@ requirements:
     - setuptools
     - toolchain
     - numpy x.x
-    - pkg-config      # [not win]
-    - msinttypes      # [win and py27]
+    - pkg-config  # [not win]
+    - msinttypes  # [win and py27]
     - ffmpeg 2.8.*
   run:
     - python
