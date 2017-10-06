@@ -1,6 +1,6 @@
 {% set name = "aubio" %}
-{% set version = "0.4.5" %}
-{% set sha256 = "70c2804e6f4fbf0ebc0fb9ac8cc9d465ef4a4d438311c074c9a7364e98827af6" %}
+{% set version = "0.4.6" %}
+{% set sha256 = "bdc73be1f007218d3ea6d2a503b38a217815a0e2ccc4ed441f6e850ed5d47cfb" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - avcodec_declfirst.patch  [win and py27]
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
