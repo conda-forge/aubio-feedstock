@@ -10,8 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.bz2
   url: https://aubio.org/pub/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
-  patches:
-    - avcodec_declfirst.patch  # [win and py27]
 
 build:
   number: 0
