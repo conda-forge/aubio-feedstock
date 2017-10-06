@@ -22,13 +22,13 @@ requirements:
     - python
     - setuptools
     - toolchain
-    - numpy x.x
+    - numpy 1.11.*
     - pkg-config  # [not win]
     - msinttypes  # [win and py27]
     - ffmpeg 2.8.*
   run:
     - python
-    - numpy x.x
+    - numpy >=1.11
     - ffmpeg 2.8.*
 
 test:
