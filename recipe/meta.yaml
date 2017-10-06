@@ -22,12 +22,11 @@ requirements:
     - toolchain
     - numpy 1.11.*
     - pkg-config  # [not win]
-    - msinttypes  # [win and py27]
-    - ffmpeg 2.8.*
+    - ffmpeg 2.8.*  # [not (win and py27)]
   run:
     - python
     - numpy >=1.11
-    - ffmpeg 2.8.*
+    - ffmpeg 2.8.*  # [not (win and py27)]
 
 test:
   imports:
