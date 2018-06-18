@@ -17,14 +17,16 @@ are done in C, for speed and memory efficiency.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/aubio-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/aubio-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/aubio-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/aubio-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/aubio-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/aubio-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/aubio-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/aubio-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/aubio-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/aubio-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/aubio-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/aubio-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/aubio/badges/version.svg)](https://anaconda.org/conda-forge/aubio)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/aubio/badges/downloads.svg)](https://anaconda.org/conda-forge/aubio)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-aubio-green.svg)](https://anaconda.org/conda-forge/aubio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/aubio.svg)](https://anaconda.org/conda-forge/aubio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/aubio.svg)](https://anaconda.org/conda-forge/aubio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/aubio.svg)](https://anaconda.org/conda-forge/aubio) |
 
 Installing aubio
 ================
