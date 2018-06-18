@@ -20,6 +20,9 @@ build:
 requirements:
   build:
     - pkg-config  # [not win]
+    - {{ pin_compatible('numpy') }}
+    - {{ compiler('c') }}
+  host:
     - {{ compiler('c') }}
   host:
     - python
@@ -28,7 +31,6 @@ requirements:
     - ffmpeg        # [not (win and py27)]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - ffmpeg        # [not (win and py27)]
 
 test:
