@@ -10,9 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.bz2
   url: https://aubio.org/pub/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
-  patches:
-    - py27_noffmpeg.patch  # [win and py27]
-    - ffmpeg4.patch
 
 build:
   number: 0
