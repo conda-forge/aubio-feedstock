@@ -1,6 +1,6 @@
 {% set name = "aubio" %}
-{% set version = "0.4.7" %}
-{% set sha256 = "cbed4afec5ab3a1a6300c7e3af0a1369379aa94259f5e701a8ca905cdd9fa041" %}
+{% set version = "0.4.8" %}
+{% set sha256 = "dcf7473e1e123cc7f95ae06d18cf7901d70d5d245b1adaceca4c779568f84bba" %}
 
 package:
   name: {{ name|lower }}
