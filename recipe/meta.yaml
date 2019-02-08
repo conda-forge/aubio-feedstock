@@ -1,6 +1,6 @@
 {% set name = "aubio" %}
-{% set version = "0.4.8" %}
-{% set sha256 = "dcf7473e1e123cc7f95ae06d18cf7901d70d5d245b1adaceca4c779568f84bba" %}
+{% set version = "0.4.9" %}
+{% set sha256 = "d48282ae4dab83b3dc94c16cf011bcb63835c1c02b515490e1883049c3d1f3da" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
     - py27_noffmpeg.patch  # [win and py27]
 
 build:
-  number: 1001
+  number: 0
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vvv"
 
 requirements:
