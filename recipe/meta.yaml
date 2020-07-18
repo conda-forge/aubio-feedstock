@@ -14,7 +14,7 @@ source:
     - py27_noffmpeg.patch  # [win and py27]
 
 build:
-  number: 3
+  number: 4
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vvv"
 
 requirements:
