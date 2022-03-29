@@ -10,11 +10,9 @@ source:
   fn: {{ name }}-{{ version }}.tar.bz2
   url: https://aubio.org/pub/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
-  patches:
-    - py27_noffmpeg.patch  # [win and py27]
 
 build:
-  number: 6
+  number: 7
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vvv"
 
 requirements:
@@ -26,11 +24,10 @@ requirements:
     - setuptools
     - pip
     - numpy
-    - ffmpeg        # [not (win and py27)]
+    - ffmpeg
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - ffmpeg        # [not (win and py27)]
 
 test:
   imports:
