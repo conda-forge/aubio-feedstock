@@ -12,13 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 9
+  number: 10
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vvv"
 
 requirements:
   build:
     - pkg-config  # [not win]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - setuptools
@@ -27,7 +28,6 @@ requirements:
     - ffmpeg
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
